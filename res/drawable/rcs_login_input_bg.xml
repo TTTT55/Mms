@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/rcs_login_input_bg" />
+    <stroke android:width="@dimen/rcs_login_input_border_width" android:color="@color/rcs_login_input_border_color" />
+    <corners android:radius="@dimen/rcs_login_input_corner_radius" />
+    <padding android:left="@dimen/rcs_login_input_padding_h" android:top="@dimen/rcs_login_input_padding_v" android:right="@dimen/rcs_login_input_padding_v" android:bottom="@dimen/rcs_login_input_padding_v" />
+</shape>

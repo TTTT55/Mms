@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="attachment_type_column_count">3</integer>
+    <integer name="attachment_type_row_count">2</integer>
+    <integer name="cancel_button_image_alpha">127</integer>
+    <integer name="floating_notification_sub_text_suggest_count">27</integer>
+    <integer name="google_play_services_version">12451000</integer>
+    <integer name="rcs_gridview_count">3</integer>
+    <integer name="rotation">0</integer>
+    <integer name="smiley_column_count">5</integer>
+    <integer name="smiley_row_count">3</integer>
+    <integer name="status_bar_notification_info_maxnum">999</integer>
+    <integer name="window_translucent_status">1</integer>
+</resources>

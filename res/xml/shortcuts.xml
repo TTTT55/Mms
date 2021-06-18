@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/ic_shortcuts_new_message" android:enabled="true">
+        <intent android:targetPackage="com.android.mms" android:action="android.intent.action.VIEW" android:targetClass="com.android.mms.ui.NewMessageActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_shortcuts_setting" android:enabled="true">
+        <intent android:targetPackage="com.android.mms" android:action="android.intent.action.VIEW" android:targetClass="com.android.mms.ui.MessagingPreferenceActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

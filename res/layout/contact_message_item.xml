@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:autoLink="none" android:id="@id/message_body" android:paddingBottom="@dimen/bubble_body_view_bottom_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bubble_text_top_padding" android:layout_marginBottom="@dimen/bubble_text_extra_padding" android:lineSpacingMultiplier="@dimen/bubble_body_line_spacing_multiplier" android:textDirection="firstStrongLtr" style="@style/TextAppearance.MessageBody" />
+</FrameLayout>

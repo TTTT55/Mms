@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/bottom_editor_panel_radius" />
+    <solid android:color="@color/record_audio_btn" />
+    <stroke android:width="@dimen/border_width" android:color="@color/border_color" />
+</shape>

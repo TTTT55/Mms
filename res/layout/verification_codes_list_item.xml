@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.VerificationCodeListItem android:id="@id/msg_list_item" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="0.0dip" style="@style/BookmarkListItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/msg_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/tab_header_margin" android:layout_marginEnd="@dimen/tab_header_margin">
+        <com.android.mms.ui.MmsQuickContactBadge android:id="@id/avatar" android:visibility="gone" android:layout_width="@dimen/avatar_size_square" android:layout_height="@dimen/avatar_size_square" android:layout_marginEnd="@dimen/avatar_square_margin" />
+        <TextView android:ellipsize="end" android:id="@id/message_sender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:paddingEnd="2.0dip" style="@style/TextAppearance.MessageDesc.BookmarkTitle" />
+        <TextView android:id="@id/message_date" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.MessageDesc.BookmarkDate" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/message_slot_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" android:layout_marginStart="@dimen/list_item_subject_padding" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/favorite_mark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/favorite_icon" android:contentDescription="@string/menu_lock" android:layout_marginStart="@dimen/favorite_icon_padding" />
+    </LinearLayout>
+    <ViewStub android:id="@id/message_body_list_stub" android:layout="@layout/message_item_list_body" android:inflatedId="@id/message_body_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/msg_info_layout" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+    <FrameLayout android:orientation="vertical" android:id="@id/bubble" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/msg_info_layout" android:layout_marginStart="@dimen/bubble_sms_card_margin_start" android:layout_marginEnd="@dimen/bubble_sms_card_margin_end" />
+</com.android.mms.ui.VerificationCodeListItem>

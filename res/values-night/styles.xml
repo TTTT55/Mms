@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MmsTheme" parent="@miui:style/Theme.Dark">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="MmsTheme.ActionBar.NoTitle" parent="@miui:style/Theme.Dark.ActionBar.NoTitle" />
+    <style name="MmsTheme.Dialog" parent="@miui:style/Theme.Dark.Dialog" />
+    <style name="MmsTheme.Dialog.NoTitle" parent="@miui:style/Theme.Dark.Dialog" />
+    <style name="MmsTheme.NoTitle" parent="@miui:style/Theme.Dark.NoTitle" />
+    <style name="MmsTheme.Picker" parent="@miui:style/Theme.Dark">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/MmsTheme.Picker.ActionBar</item>
+        <item name="miui:colorDividerLine">@android:color/transparent</item>
+    </style>
+    <style name="MmsTheme.Settings" parent="@miui:style/Theme.Dark.Settings">
+        <item name="miui:colorDividerLine">@android:color/transparent</item>
+    </style>
+    <style name="MmsTheme.SingleConversation" parent="@miui:style/Theme.Dark">
+        <item name="android:windowBackground">@drawable/conversation_bg</item>
+        <item name="android:actionBarStyle">@style/MmsTheme.SingleConversation.ActionBar</item>
+        <item name="miui:colorDividerLine">@android:color/transparent</item>
+    </style>
+    <style name="MmsTheme.SingleConversation.PushSms" parent="@miui:style/Theme.Dark">
+        <item name="miui:immersionMenuEnabled">true</item>
+    </style>
+    <style name="MmsTheme.SmsCardDetail" parent="@miui:style/Theme.Dark.ActionBar.NoTitle">
+        <item name="miui:windowTranslucentStatus">transparentDark</item>
+    </style>
+    <style name="MmsTheme.SmsHybrid" parent="@miui:style/Theme.Dark.ActionBar.NoTitle">
+        <item name="android:actionBarTabTextStyle">@miui:style/Widget.ActionBar.TabText</item>
+        <item name="miui:colorDividerLine">@android:color/transparent</item>
+    </style>
+    <style name="MmsTheme.Title" parent="@miui:style/Theme.Dark">
+        <item name="miui:colorDividerLine">@android:color/transparent</item>
+    </style>
+    <style name="TextAppearance.MessageBody.In.Understand" parent="@miui:style/TextAppearance">
+        <item name="android:textSize">@dimen/message_bubble_understand_font_size</item>
+        <item name="android:textColor">@color/understand_button_text</item>
+        <item name="android:textColorLink">@color/message_highlight_text_in_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/message_understand_button_padding</item>
+        <item name="android:paddingRight">@dimen/message_understand_button_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Theme" parent="@miui:style/Theme.Dark" />
+</resources>

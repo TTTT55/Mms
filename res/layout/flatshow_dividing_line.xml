@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="0.0dip" android:paddingEnd="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/page_no" android:background="@drawable/flatshow_page_index_gb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/TextAppearance.FlatshowPageNo" />
+    <View android:background="@drawable/flatshow_dashline_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/flatshow_divider_margin_v" android:layout_marginBottom="@dimen/flatshow_divider_margin_v" android:layout_centerVertical="true" android:layout_toStartOf="@id/page_no" />
+</RelativeLayout>

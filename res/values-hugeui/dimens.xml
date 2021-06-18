@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="add_attachment_button_margin">2.0dip</dimen>
+    <item type="dimen" name="bubble_body_line_spacing_multiplier">1</item>
+    <dimen name="bubble_body_view_bottom_padding">6.0dip</dimen>
+    <dimen name="bubble_special_margin">-6.5dip</dimen>
+    <dimen name="bubble_top_margin_minimum">12.0dip</dimen>
+    <dimen name="datetime_text_size">17.0dip</dimen>
+    <dimen name="favorite_icon_padding">0.0dip</dimen>
+    <dimen name="list_item_subject_margin_end">8.0dip</dimen>
+    <dimen name="mms_editor_bottom_padding">5.0899963dip</dimen>
+    <dimen name="vertical_divider_marginLeft">10.0dip</dimen>
+    <dimen name="vertical_divider_marginTop">4.0dip</dimen>
+</resources>

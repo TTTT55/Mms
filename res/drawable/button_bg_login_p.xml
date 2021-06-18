@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/rcs_login_btn_radius" />
+            <solid android:color="@color/rcs_login_btn_bg" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/rcs_login_btn_radius" />
+            <solid android:color="@color/view_press_mask" />
+            <padding android:top="@dimen/rcs_login_btn_padding_v" android:bottom="@dimen/rcs_login_btn_padding_v" />
+        </shape>
+    </item>
+</layer-list>

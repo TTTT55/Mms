@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.miui.smsextra.internal.subpage.ui.BannerItem android:id="@id/banner_item" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/banner_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/place_holder_normal_wrapper" android:adjustViewBounds="true" android:contentDescription="@null" />
+            <ImageView android:layout_gravity="end|center|top" android:id="@id/ad_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:src="@drawable/tag_ad_in_banner" android:contentDescription="@string/imageview_ad" />
+        </com.miui.smsextra.internal.subpage.ui.BannerItem>
+        <LinearLayout android:orientation="vertical" android:id="@id/sub_page_items" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

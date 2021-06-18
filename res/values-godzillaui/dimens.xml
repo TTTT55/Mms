@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="bubble_body_line_spacing_multiplier">0.85</item>
+    <dimen name="favorite_icon_padding">0.0dip</dimen>
+    <dimen name="list_item_subject_margin_end">8.0dip</dimen>
+    <dimen name="mms_editor_bottom_padding">5.0899963dip</dimen>
+</resources>

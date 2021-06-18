@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/mx_msg" android:key="pref_key_mx_msg">
+        <CheckBoxPreference android:persistent="false" android:title="@string/mx_enable" android:key="pref_key_enable_mx_switch" android:summary="@string/mx_dspt_listview" android:defaultValue="false" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/mx_on_sim_1" android:key="pref_key_enable_mx1_switch" android:summary="@string/mx_dspt_listview" android:defaultValue="false" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/mx_on_sim_2" android:key="pref_key_enable_mx2_switch" android:summary="@string/mx_dspt_listview" android:defaultValue="false" />
+        <PreferenceScreen android:title="@string/mx_current_status" android:key="pref_key_mx_status">
+            <intent android:targetPackage="com.android.mms" android:action="android.intent.action.MAIN" android:targetClass="com.android.mms.ui.MxPreferenceActivity" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/rcs_msg" android:key="pref_key_rcs">
+        <CheckBoxPreference android:persistent="false" android:title="@string/rcs_msg" android:key="pref_key_enable_rcs" android:summary="@string/rcs_dspt" android:defaultValue="false" />
+        <PreferenceScreen android:title="@string/rcs_setting" android:key="pref_key_rcs_setting">
+            <intent android:targetPackage="com.android.mms" android:action="android.intent.action.MAIN" android:targetClass="com.xiaomi.rcs.ui.RcsSettingPreferenceActivity" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/rcs_pref_category_rcs" android:key="pref_key_rcs_up">
+        <CheckBoxPreference android:persistent="false" android:title="@string/rcs_pref_login_rcs" android:key="pref_key_enable_rcs_up" android:defaultValue="false" />
+        <PreferenceScreen android:title="@string/rcs_pref_setting_entrance" android:key="pref_key_rcs_up_setting">
+            <intent android:targetPackage="com.android.mms" android:action="android.intent.action.MAIN" android:targetClass="com.xiaomi.rcs.ui.RcsSettingPreferenceActivity" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_sms_theme_title" android:key="pref_key_display_settings">
+        <miui.preference.ValuePreference android:title="@string/title_show_sms_template" android:key="pref_key_smart_messages_settings_entry" android:summary="@string/pref_show_sms_template_entry_summary">
+            <intent android:targetPackage="com.android.mms" android:action="android.intent.action.MAIN" android:targetClass="com.android.mms.ui.SmartMessagePreferencesActivity" />
+        </miui.preference.ValuePreference>
+        <CheckBoxPreference android:title="@string/title_collapse_sp_messages" android:key="pref_key_collapse_sp_messages_v9" android:summary="@string/pref_collapse_sp_messages_summary" />
+        <CheckBoxPreference android:title="@string/title_show_list_avatar" android:key="pref_key_show_list_avatar" android:summary="@string/pref_show_list_avatar_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/title_show_photo_word" android:key="pref_key_show_photo_word" android:summary="@string/pref_show_photo_word_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/title_show_blocked_messages" android:key="pref_key_show_blocked_messages" android:summary="@string/pref_show_blocked_messages_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_notification_settings_title" android:key="pref_key_notification_settings">
+        <CheckBoxPreference android:persistent="false" android:title="@string/pref_title_notification_body_enabled" android:key="pref_key_enable_notification_body" android:summary="@string/pref_summary_notification_body_enabled" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/pref_title_delivery_reports" android:key="pref_key_delivery_reports" android:summary="@string/pref_summary_delivery_reports" />
+        <CheckBoxPreference android:title="@string/pref_title_send_delivery_reports" android:key="pref_key_send_delivery_reports" android:summary="@string/pref_summary_send_delivery_reports" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/pref_delivery_ringtone" android:key="pref_key_delivery_ringtone" android:summary="@string/pref_summary_delivery_ringtone" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_sms_storage_title" android:key="pref_key_storage_settings">
+        <CheckBoxPreference android:title="@string/pref_title_auto_delete" android:key="pref_key_auto_delete" android:summary="@string/pref_summary_auto_delete" />
+        <Preference android:persistent="false" android:title="@string/pref_title_sms_delete" android:key="pref_key_sms_delete_limit" android:summary="@string/pref_summary_delete_limit" android:dependency="pref_key_auto_delete" />
+        <Preference android:persistent="false" android:title="@string/pref_title_mms_delete" android:key="pref_key_mms_delete_limit" android:summary="@string/pref_summary_delete_limit" android:dependency="pref_key_auto_delete" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_other_title" android:key="pref_other_settings">
+        <CheckBoxPreference android:title="@string/title_use_gsm_alphabet" android:key="pref_key_use_gsm_alphabet" android:defaultValue="true" />
+        <PreferenceScreen android:title="@string/pref_title_msg_blocked" android:key="pref_key_msg_blocked">
+            <intent android:action="com.miui.antispam.action.ANTISPAM_SETTINGS" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/pref_msg_trash_bin_title" android:key="pref_key_msg_trash_bin" />
+        <PreferenceScreen android:title="@string/pref_cell_broadcast" android:key="pref_cell_broadcast" />
+        <PreferenceScreen android:title="@string/found_wild_messages_title" android:key="pref_key_download_wild_msg" />
+        <PreferenceScreen android:title="@string/pref_advanced_settings_title" android:key="pref_advanced_settings">
+            <intent android:targetPackage="com.android.mms" android:action="android.intent.action.MAIN" android:targetClass="com.android.mms.ui.MessagingAdvancedPreferenceActivity" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/mx_dspt_provision_ex2" android:key="pref_key_privacy_policy">
+            <intent android:targetPackage="com.android.mms" android:action="android.intent.action.MAIN" android:targetClass="com.android.mms.ui.PrivacyPolicyPreferenceActivity" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

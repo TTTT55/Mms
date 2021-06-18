@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/audio_record_window" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:recording_progress="http://schemas.android.com/apk/res/com.android.mms">
+    <TextView android:textSize="15.269989sp" android:textStyle="bold" android:textColor="@color/audio_progress_title_color" android:id="@id/audio_record_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/slide_up_to_cancel" android:layout_centerHorizontal="true" />
+    <com.android.mms.audio.RecordingProgressView android:id="@id/audio_record_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/audio_record_status" android:layout_centerHorizontal="true" recording_progress:defaultColor="@color/audio_bottom_default_color" recording_progress:indicatorColor="@color/audio_bottom_color" recording_progress:indicatorMaxHeight="@dimen/audio_bottom_progress_max_height" recording_progress:indicatorWidth="@dimen/audio_bottom_progress_interval" recording_progress:interval="@dimen/audio_bottom_progress_interval" />
+</RelativeLayout>

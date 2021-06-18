@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/attachment_screen" />
+        </shape>
+    </item>
+    <item android:left="-1.0px" android:right="-1.0px" android:bottom="@dimen/attachment_panel_bottom_border_pos">
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/border_width" android:color="@color/border_color" />
+            <padding android:top="@dimen/border_width" />
+        </shape>
+    </item>
+</layer-list>

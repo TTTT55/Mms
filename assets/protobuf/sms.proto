@@ -1,0 +1,61 @@
+package sms;
+
+option optimize_for = LITE_RUNTIME;
+option java_package = "com.android.mms.backup";
+option java_outer_classname = "SmsProtos";
+
+message Sms {
+  enum SmsType {
+    MESSAGE_TYPE_ALL    = 0;
+    MESSAGE_TYPE_INBOX  = 1;
+    MESSAGE_TYPE_SENT   = 2;
+    MESSAGE_TYPE_DRAFT  = 3;
+    MESSAGE_TYPE_OUTBOX = 4;
+    MESSAGE_TYPE_FAILED = 5;
+    MESSAGE_TYPE_QUEUED = 6;
+    MESSAGE_TYPE_INVALID= 7;
+  }
+  enum StatusType {
+    NONE = -1;
+    COMPLETE = 0;
+    PENDING = 64;
+    FAILED = 128;
+  }
+
+  optional string guid = 1;
+  optional string luid = 2;
+  optional int32 type = 3;
+  optional string address = 4;
+  optional string subject = 5;
+  optional string body = 6;
+  optional int64 date = 7;
+  optional bool read = 8;
+  optional bool seen = 9;
+  optional int32 status = 10;
+  optional int64 serverDate = 11;
+  optional string serviceCenter = 12;
+  optional int32 protocol = 13;
+  optional bool replyPathPresent = 14;
+  optional bool locked = 15;
+  optional int64 mxId = 16;
+  optional int32 mxStatus = 17;
+
+}
+
+message SmsBookmark {
+  optional string guid = 1;
+  optional string luid = 2;
+  optional string fromName = 3;
+  optional string address = 4;
+  optional string subject = 5;
+  optional string body = 6;
+  optional int64 markDate = 7;
+  optional int32 forward = 8;
+  optional int32 status = 9;
+
+}
+
+message MmsSms {
+  repeated Sms sms = 1;
+  repeated SmsBookmark smsBookmark = 2;
+}

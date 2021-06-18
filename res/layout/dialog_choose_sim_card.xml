@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="@color/border_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/select_sim_divider_padding" />
+    <ListView android:id="@id/lv_sim_cards" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/border_color" android:dividerHeight="1.0px" />
+</LinearLayout>

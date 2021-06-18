@@ -1,0 +1,70 @@
+package mms;
+
+option optimize_for = LITE_RUNTIME;
+option java_package = "com.android.mms.backup";
+option java_outer_classname = "MmsProtos";
+
+message Pdu {
+  optional string guid = 1;
+  optional string luid = 2;
+  optional int64 date = 3;
+  optional int64 serverDate = 4;
+  optional int32 msgBox = 5;
+  optional bool read = 6;
+  optional string mId = 7;
+  optional string subject = 8;
+  optional int32 subjectCharset = 9;
+  optional string contentType = 10;
+  optional string contentLocation = 11;
+  optional int64 expiry = 12;
+  optional string msgClass = 13;
+  optional int32 msgType = 14;
+  optional int32 mmsVersion = 15;
+  optional int32 msgSize = 16;
+  optional int32 priority = 17;
+  optional int32 readReport = 18;
+  optional bool reportAllowed = 19;
+  optional int32 responseStatus = 20;
+  optional int32 status = 21;
+  optional string transactionId = 22;
+  optional int32 retrieveStatus = 23;
+  optional string retrieveText = 24;
+  optional int32 retrieveTextCharset = 25;
+  optional int32 readStatus = 26;
+  optional int32 contentClass = 27;
+  optional string responseText = 28;
+  optional int64 deliveryTime = 29;
+  optional int32 deliveryReport = 30;
+  optional bool locked = 31;
+  optional bool seen = 32;
+  repeated PduAddr addrs = 33;
+  repeated PduPart pduParts = 34;
+  optional int32 dateMsPart = 35;
+  optional int64 mxId = 36;
+  optional int32 mxStatus = 37;
+}
+
+message PduAddr {
+  optional string address = 1;
+  optional int32 type = 2;
+  optional int32 charset = 3;
+}
+
+message PduPart {
+  optional int32 sequence = 1;
+  optional string contentType = 2;
+  optional string name = 3;
+  optional int32 charset = 4;
+  optional string contentDisposition = 5;
+  optional string fileName = 6;
+  optional string contentId = 7;
+  optional string contentLocation = 8;
+  optional int32 contentTypeStart = 9;
+  optional string contentTypeType = 10;
+  optional string text = 11;
+  optional bytes data = 12;
+}
+
+message MmsCollection {
+  repeated Pdu pdus = 1;
+}

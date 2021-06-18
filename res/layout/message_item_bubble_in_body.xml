@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:linksClickable="false" android:id="@id/message_subject" android:paddingBottom="@dimen/bubble_body_view_bottom_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bubble_text_top_padding" android:layout_marginBottom="@dimen/bubble_text_extra_padding" android:lineSpacingMultiplier="@dimen/bubble_body_line_spacing_multiplier" style="@style/TextAppearance.MessageSubject.In" />
+    <TextView android:linksClickable="false" android:id="@id/message_body" android:paddingBottom="@dimen/bubble_body_view_bottom_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bubble_text_top_padding" android:layout_marginBottom="@dimen/bubble_text_extra_padding" android:layout_below="@id/message_subject" android:lineSpacingMultiplier="@dimen/bubble_body_line_spacing_multiplier" android:textDirection="firstStrongLtr" style="@style/TextAppearance.MessageBody.In" />
+    <ViewStub android:id="@id/rcs_file_info_stub" android:layout="@layout/rcs_ui" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/contact_message_body" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/message_body" />
+</RelativeLayout>

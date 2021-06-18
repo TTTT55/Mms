@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.android.mms" platformBuildVersionCode="11000001" platformBuildVersionName="11.0.0.1">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <original-package android:name="com.android.mms"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_MMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INSTALL_DRM"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH"/>
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.SEND_SMS_NO_CONFIRMATION"/>
+    <uses-permission android:name="android.permission.SEND_RESPOND_VIA_MESSAGE"/>
+    <uses-permission android:name="com.xiaomi.permission.CLOUD_MANAGER"/>
+    <uses-permission android:name="com.xiaomi.permission.QUERY_MX_STAUTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="miui.permission.SHELL"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.UPDATE_APP_OPS_STATS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="com.miui.yellowpage.permission.ACCESS_YELLOWPAGE"/>
+    <uses-permission android:name="miui.permission.BLE_IMMEDIATE_ALERT"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="com.miui.antispam.permission.DATA_MONTH_REPORT"/>
+    <uses-permission android:name="android.permission.READ_SYNC_STATS"/>
+    <uses-permission android:name="com.miui.antispam.permission.CONTENTPROVIDER"/>
+    <uses-permission android:name="miui.permission.USE_INTERNAL_GENERAL_API"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.xiaomi.permission.SYNC_TAG_DATA"/>
+    <uses-permission android:name="android.permission.MANAGE_USERS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="com.xiaomi.simactivate.service.ACTIVATE_SIM"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="com.xiaomi.metok.permission.CONTENTPROVIDER.read"/>
+    <permission android:name="com.android.mms.permission.MIPUSH_RECEIVE" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.android.mms.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="com.xiaomi.rcs.permission.SERVICE"/>
+    <uses-permission android:name="com.nativeapp.rcsapp.permission"/>
+    <permission android:name="com.xiaomi.rcs.permission.SERVICE" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="android.permission.ACCESS_TEMPLATE_DATA" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.xiaomi.permission.QUERY_MX_STAUTS" android:protectionLevel="signatureOrSystem"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <compatible-screens>
+        <screen android:screenDensity="xhdpi" android:screenSize="small"/>
+        <screen android:screenDensity="xhdpi" android:screenSize="normal"/>
+        <screen android:screenDensity="xhdpi" android:screenSize="large"/>
+        <screen android:screenDensity="xhdpi" android:screenSize="xlarge"/>
+    </compatible-screens>
+    <application android:allowTaskReparenting="true" android:backupAgent="com.android.mms.backup.MmsBackupAgent" android:icon="@mipmap/ic_launcher_smsmms" android:label="@string/app_label" android:name="com.android.mms.Application" android:supportsRtl="true" android:taskAffinity="android.task.mms">
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_key"/>
+        <uses-library android:name="com.google.android.maps"/>
+        <activity android:label="@string/title_activity_rcs_maps" android:name="com.xiaomi.rcs.ui.RcsMapsActivity"/>
+        <activity android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize" android:label="@string/area_code_title" android:name="com.xiaomi.rcs.ui.areacode.AreaCodePickerActivity" android:theme="@style/MmsTheme.Title"/>
+        <activity android:label="@string/rcs_pref_setting_entrance" android:name="com.xiaomi.rcs.ui.RcsSettingPreferenceActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Settings"/>
+        <activity android:label="" android:name="com.xiaomi.rcs.ui.RcsLoginActivity" android:screenOrientation="portrait" android:theme="@style/RcsLogin.Theme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.xiaomi.rcs.ui.RcsCFSDialogActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Dialog.NoTitle" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <service android:exported="false" android:name="com.xiaomi.rcs.ui.FetchAddressIntentService"/>
+        <meta-data android:name="cn.cmcc.online.smsapi.API_KEY" android:value="43a489fcb42b4372b10f0586fe6dbf88"/>
+        <meta-data android:name="android.max_aspect" android:value="2.2"/>
+        <uses-library android:name="cloud-common.jar"/>
+        <uses-library android:name="microlog4android.jar"/>
+        <uses-library android:name="protobuf.jar"/>
+        <uses-library android:name="gson.jar"/>
+        <uses-library android:name="picasso.jar"/>
+        <service android:exported="false" android:name="com.android.mms.transaction.TransactionService"/>
+        <service android:exported="false" android:name="com.android.mms.transaction.SmsReceiverService"/>
+        <service android:exported="false" android:name="com.android.mms.transaction.SmsReportService"/>
+        <service android:name="com.android.mms.transaction.SendWebMessageService" android:permission="android.permission.SEND_SMS"> android:exported="true"&gt; <intent-filter>
+                <action android:name="com.android.mms.transaction.ACTION_SEND_WEB_MESSAGE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.android.mms.transaction.ClassZeroService"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/conversation" android:launchMode="singleTask" android:name="com.android.mms.ui.MmsTabActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Title.MmsTabActivity" android:uiOptions="splitActionBarWhenNarrow" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.APP_MESSAGING"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/mms"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android-dir/mms-sms"/>
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+        </activity>
+        <activity-alias android:exported="true" android:name="com.android.mms.ui.ConversationList" android:screenOrientation="portrait" android:targetActivity="com.android.mms.ui.MmsTabActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.android.mms.ui.ComposeMessageRouterActivity" android:theme="@android:style/Theme.NoDisplay" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android-dir/mms-sms"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.SENDTO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="sms"/>
+                <data android:scheme="smsto"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.SENDTO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="mms"/>
+                <data android:scheme="mmsto"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="audio/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/ogg"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/x-vcard"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="application/ogg"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.rcs.action.pa_chat"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.rcs.action.pa_history"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.rcs.action.group_chat"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.rcs.action.send_to_pc"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.android.mms.ui.ForwardMessageActivity" android:screenOrientation="portrait" android:targetActivity="com.android.mms.ui.ComposeMessageRouterActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.android.mms.ui.OnResultRouterActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTask" android:name="com.android.mms.ui.NewMessageActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Conversation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.android.mms.ui.SingleRecipientConversationActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.SingleConversation" android:uiOptions="splitActionBarWhenNarrow" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.android.mms.ui.PrivateSingleRecipientConversationActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.SingleConversation" android:uiOptions="splitActionBarWhenNarrow" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:launchMode="singleTask" android:name="com.android.mms.ui.PushSmsConversationActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.SingleConversation.PushSms" android:uiOptions="splitActionBarWhenNarrow" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:label="" android:launchMode="singleTop" android:name="com.android.mms.ui.BlockedConversationActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.SingleConversation" android:uiOptions="splitActionBarWhenNarrow"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.android.mms.ui.MultipleRecipientsConversationActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Conversation" android:uiOptions="splitActionBarWhenNarrow" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.android.mms.ui.MultipleRecipientsConversationDetailsActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Conversation" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.android.mms.ui.NewMessagePopupActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Dialog.NewMessagePopup" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.android.mms.ui.DateTimePickerActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Picker" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="com.android.mms" android:mimeType="vnd.android.cursor.item/datetime"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.android.mms.ui.TimedMessageExpiredActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Dialog.NoTitle" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="@string/change_duration_activity" android:name="com.android.mms.ui.EditSlideDurationActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Dialog.NoTitle"/>
+        <activity android:label="@string/edit_slideshow_activity" android:name="com.android.mms.ui.SlideshowEditActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Title.Menu"/>
+        <activity android:label="@string/edit_slide_activity" android:name="com.android.mms.ui.SlideEditorActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Title.Menu" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/slideshow_activity" android:name="com.android.mms.ui.SlideshowActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.SlideShow"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/app_label" android:launchMode="singleTop" android:name="com.android.mms.ui.MessagingPreferenceActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Settings">
+            <intent-filter android:priority="30">
+                <action android:name="miui.intent.action.APP_SETTINGS"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="functionindex" android:resource="@xml/functionindex"/>
+        </activity>
+        <activity android:label="@string/pref_advanced_settings_title" android:name="com.android.mms.ui.MessagingAdvancedPreferenceActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Settings"/>
+        <activity android:label="@string/title_show_sms_template" android:name="com.android.mms.ui.SmartMessagePreferencesActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Settings"/>
+        <activity android:label="@string/mx_msg" android:name="com.android.mms.ui.MxPreferenceActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Settings"/>
+        <activity android:label="@string/mx_dspt_provision_ex2" android:name="com.android.mms.ui.PrivacyPolicyPreferenceActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Settings"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.android.mms.ui.FlatMessageListActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Title.FlatMessageList" android:uiOptions="splitActionBarWhenNarrow"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.android.mms.ui.PickerActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Title.FlatMessageList" android:uiOptions="splitActionBarWhenNarrow"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.android.mms.ui.PhraseActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Title" android:uiOptions="splitActionBarWhenNarrow"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.android.mms.hybrid.SmsHybridActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.SmsHybrid">
+            <intent-filter>
+                <action android:name="com.android.mms.action.VIEW_WEB"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="i.mi.com" android:pathPattern="/mobile/sms/.*" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.mms.action.VIEW_WEB_LOGIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.android.mms.transaction.HighPushReceiver" android:permission="android.permission.BROADCAST_WAP_PUSH">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.WAP_PUSH_DELIVER"/>
+                <data android:mimeType="application/vnd.wap.mms-message"/>
+                <data android:mimeType="application/vnd.wap.sic"/>
+                <data android:mimeType="application/vnd.wap.slc"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.mms.transaction.MxPushMessageReceiver" android:permission="com.xiaomi.permission.SEND_PUSH">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.service_started"/>
+                <action android:name="com.xiaomi.push.new_msg"/>
+                <action android:name="com.xiaomi.push.new_pres"/>
+                <action android:name="com.xiaomi.push.channel_opened"/>
+                <action android:name="com.xiaomi.push.channel_closed"/>
+                <action android:name="com.xiaomi.push.kicked"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/sim_manage_messages_title" android:name="com.android.mms.ui.ManageSimMessages" android:screenOrientation="portrait" android:theme="@style/MmsTheme.ManageSimMessage" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.android.mms.transaction.HighPrivilegedSmsReceiver" android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_DELIVER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.android.mms.transaction.SmsReceiver" android:permission="android.permission.SEND_SMS">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="com.android.mms.transaction.MESSAGE_SENT"/>
+                <data android:scheme="content"/>
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="com.android.mms.transaction.SEND_MESSAGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.android.mms.transaction.TimedMessageReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.mms.transaction.TIMED_MESSAGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.android.mms.transaction.MessageStatusReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="com.android.mms.transaction.MessageStatusReceiver.MESSAGE_STATUS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.android.mms.transaction.MessageStatusService"/>
+        <receiver android:name="com.android.mms.transaction.SimFullReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SIM_FULL"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.android.mms.transaction.SmsRejectedReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_REJECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.android.mms.AccountsChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.accounts.LOGIN_ACCOUNTS_PRE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.android.mms.ui.ConfirmRateLimitActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Dialog">
+            <intent-filter>
+                <action android:name="com.android.mms.RATE_LIMIT_SURPASSED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/search" android:name="com.android.mms.ui.SearchActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <provider android:authorities="com.android.mms.SuggestionsProvider" android:exported="true" android:name="com.android.mms.SuggestionsProvider" android:readPermission="android.permission.READ_SMS">
+            <path-permission android:pathPrefix="/search_suggest_query" android:readPermission="android.permission.GLOBAL_SEARCH"/>
+            <path-permission android:pathPrefix="/search_suggest_shortcut" android:readPermission="android.permission.GLOBAL_SEARCH"/>
+        </provider>
+        <provider android:authorities="msg-template" android:exported="true" android:multiprocess="true" android:name="com.android.mms.provider.TemplateProvider" android:permission="android.permission.ACCESS_TEMPLATE_DATA"/>
+        <provider android:authorities="com.android.mms.provider.MmsSettingsSearchProvider" android:exported="true" android:grantUriPermissions="true" android:multiprocess="false" android:name="com.android.mms.provider.MmsSettingsSearchProvider">
+            <intent-filter>
+                <action android:name="miui.intent.action.SETTINGS_SEARCH_PROVIDER"/>
+            </intent-filter>
+        </provider>
+        <receiver android:name="com.android.mms.extra.TemplateUpdateReceiverWrapper">
+            <intent-filter>
+                <action android:name="com.miui.yellowpage.MESSAGING_TEMPLATE_READY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.android.mms.update.MmsPushMessageReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.android.mms.ui.NoConfirmationSendService" android:permission="android.permission.SEND_SMS_NO_CONFIRMATION">
+            <intent-filter>
+                <action android:name="com.android.mms.intent.action.SENDTO_NO_CONFIRMATION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="sms"/>
+                <data android:scheme="smsto"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.mms.intent.action.SEND_AND_REMOVE_PENNDING_MESSAGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.android.mms.ui.SendRspViaMsgService" android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE">
+            <intent-filter>
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="sms"/>
+                <data android:scheme="smsto"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.xiaomi.mms.transaction.MxMessageService">
+            <intent-filter>
+                <action android:name="com.xiaomi.mms.mx.ACTION_HANDLE_MX_RECEIVED"/>
+                <action android:name="com.xiaomi.mms.mx.ACTION_HANDLE_MX_SENT"/>
+                <action android:name="com.xiaomi.mms.mx.ACTION_HANDLE_MX_DELIVERED"/>
+                <action android:name="com.xiaomi.mms.mx.ACTION_HANDLE_PRESENCE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.xiaomi.mms.transaction.MxActivateService" android:permission="com.xiaomi.permission.CLOUD_MANAGER">
+            <intent-filter>
+                <action android:name="com.xiaomi.mms.action.ENABLE_MX"/>
+                <action android:name="com.xiaomi.mms.action.DISABLE_MX"/>
+                <action android:name="com.xiaomi.mms.action.action.QUERY_PHONE"/>
+                <action android:name="com.xiaomi.mms.action.SEND_SMS"/>
+                <action android:name="com.xiaomi.mms.action.QUERY_MID"/>
+                <action android:name="com.xiaomi.mms.action.QUERY_TOKEN"/>
+                <action android:name="com.xiaomi.mms.action.CLOSE_CHANNEL"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.xiaomi.mms.transaction.MxTaskService">
+            <intent-filter>
+                <action android:name="com.xiaomi.mms.mx.ACTION_QUERY_PRESENCE"/>
+                <action android:name="com.xiaomi.mms.mx.ACTION_QUERY_PENDING_PRESENCE"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.xiaomi.mms.transaction.MxMessageTrackService">
+            <intent-filter>
+                <action android:name="com.xiaomi.mms.mx.ACTION_START_TRACK"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.xiaomi.mms.transaction.MxResendService"/>
+        <service android:name="com.xiaomi.mms.transaction.MxMmsTransactionService"/>
+        <service android:name="com.xiaomi.mms.transaction.Mx2MmsTransactionService"/>
+        <service android:name="com.android.mms.transaction.SendMessageService"/>
+        <service android:name="com.android.mms.transaction.DownloadFileService">
+            <intent-filter>
+                <action android:name="com.android.mms.transaction.DownloadFileService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.android.mms.transaction.CleanFileService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaomi.push.service.XMPushService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService"/>
+        <receiver android:exported="true" android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.android.mms.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.miui.smsextra.provider.TempFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.android.mms.ui.MessageFullscreenActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.ActionBar.NoTitle"/>
+        <activity android:name="com.android.mms.ui.StatusReportActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Title"/>
+        <activity android:name="com.android.mms.ui.MessageSelectCopyTextActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Title"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/private_message" android:name="com.android.mms.ui.PrivateConversationListActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Title" android:uiOptions="splitActionBarWhenNarrow" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/private_message" android:name="com.android.mms.ui.PrivateSecondActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Title" android:uiOptions="splitActionBarWhenNarrow" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="@string/private_settings" android:name="com.android.mms.ui.PrivatePreferenceActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Settings" android:uiOptions="splitActionBarWhenNarrow"/>
+        <activity android:name="com.android.mms.ui.SelectCardPreferenceActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Title"/>
+        <activity android:name="com.android.mms.ui.MultiSimPreferenceAcitvity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Settings"/>
+        <activity android:name="com.android.mms.ui.SelectCardListPreferenceActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Title"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:launchMode="singleTask" android:name="com.android.mms.ui.ServiceProviderConversationListActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Title" android:uiOptions="splitActionBarWhenNarrow" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="@string/found_wild_messages_title" android:name="com.android.mms.ui.WildMsgActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Settings"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleInstance" android:name="com.android.mms.ui.DummyActivity" android:theme="@android:style/Theme.NoDisplay" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.android.mms.ui.PermissionCheckActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Title"/>
+        <receiver android:name="com.android.mms.ServiceProviderCollapseReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.android.mms.transaction.MxStatusService">
+            <intent-filter>
+                <action android:name="com.android.mms.QUERY_MX_STATUS"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.android.mms.transaction.DownloadMxV2FileService">
+            <intent-filter>
+                <action android:name="com.xiaomi.mms.action.download.audio"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.android.mms.transaction.NotificationAssistService"/>
+        <receiver android:name="com.xiaomi.rcs.im.RcsMessagingNotificationReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.rcs.MESSAGING_NOTIFICATION"/>
+                <action android:name="com.xiaomi.rcs.MESSAGING_DELIVER_STATUS"/>
+                <action android:name="com.xiaomi.rcs.SEND_GROUP_MESSAGE"/>
+                <action android:name="com.xiaomi.rcs.RESUME_GROUP_MESSAGE"/>
+                <action android:name="com.xiaomi.rcs.COMPOSING_STATE_UPDATE"/>
+                <action android:name="com.xiaomi.rcs.FILE_UPLOAD_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.rcs.ctrl.RcsStateReceiver">
+            <intent-filter>
+                <action android:name="rcs_action_cli"/>
+                <action android:name="rcs_action_cli_notify"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.xiaomi.rcs.im.RcsImSenderService">
+            <intent-filter>
+                <action android:name="com.xiaomi.rcs.SEND_RCS_MESSAGE"/>
+                <action android:name="com.xiaomi.rcs.RESUME_RCS_MESSAGE"/>
+                <action android:name="com.xiaomi.rcs.MARK_ALL_UNFINISH_MESSAGE_FAILED"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.xiaomi.rcs.im.RcsMessagingNotificationService"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.rcs.ctrl.RcsManagerService">
+            <intent-filter>
+                <action android:name="com.xiaomi.rcs.RCS_MANAGER"/>
+            </intent-filter>
+        </service>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.android.mms.ui.UserAgreementActivity" android:screenOrientation="portrait" android:theme="@miui:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xiaomi.rcs.ui.RcsForwardRouterActivity" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.xiaomi.rcs.FORWARD_MESSAGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="true" android:name="com.android.mms.cloudbackup.SettingsCloudBackupService" android:permission="com.xiaomi.permission.CLOUD_MANAGER">
+            <intent-filter>
+                <action android:name="miui.action.CLOUD_BACKUP_SETTINGS"/>
+                <action android:name="miui.action.CLOUD_RESTORE_SETTINGS"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.android.mms.transaction.FakeCellReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.metok.METOK.SMS"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:name="com.miui.smsextra.ui.ProxyActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme"/>
+        <activity android:exported="true" android:name="com.miui.smsextra.ui.ProxyActivityNoTitle" android:screenOrientation="portrait" android:theme="@style/MmsTheme.ActionBar.NoTitle"/>
+        <service android:exported="true" android:name="com.miui.smsextra.service.TemplateUpdateService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.android.mms.service.JobStatService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.miui.smsextra.service.SmsExtraService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:name="com.android.mms.PrivacyStateReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.action.MICLOUD_PRIVACY_DENIED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.android.mms.transaction.SmsStatReceiver">
+            <intent-filter>
+                <action android:name="com.android.mms.SMS_STAT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.xiaomi.rcs.ui.RcsGroupChatActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.SingleConversation" android:uiOptions="splitActionBarWhenNarrow" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.xiaomi.rcs.ui.RcsPCMessageConversationActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.SingleConversation" android:uiOptions="splitActionBarWhenNarrow" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/group_message_title" android:launchMode="singleTask" android:name="com.xiaomi.rcs.ui.RcsGroupConversationListActivity" android:screenOrientation="portrait" android:theme="@style/MmsTheme.Title" android:uiOptions="splitActionBarWhenNarrow" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+    </application>
+</manifest>

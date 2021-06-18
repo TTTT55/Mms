@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/rcs_pref_category_set_alias" android:key="pref_category_user_alias">
+        <EditTextPreference android:persistent="false" android:title="@string/rcs_pref_user_alias_title" android:key="pref_user_alias" android:defaultValue="@string/rcs_pref_user_alias_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/rcs_pref_category_rcs_message" android:key="pref_rcs_message">
+        <ListPreference android:persistent="true" android:entries="@array/message_sending_method" android:title="@string/rcs_pref_default_sending_method" android:key="pref_message_sending_method" android:defaultValue="0" android:entryValues="@array/message_sending_method_value" />
+        <ListPreference android:persistent="false" android:entries="@array/rcs_message_fallback" android:title="@string/rcs_pref_cfs" android:key="pref_rcs_message_cfs" android:defaultValue="0" android:entryValues="@array/rcs_fallback_value" />
+        <ListPreference android:persistent="false" android:entries="@array/rcs_ft_fallback" android:title="@string/rcs_pref_ft_cfs" android:key="pref_rcs_ft_cfs" android:defaultValue="0" android:entryValues="@array/rcs_fallback_value" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/rcs_pref_ft_auto_download" android:key="pref_auto_download" android:summary="@string/rcs_pref_ft_auto_download_details" android:defaultValue="true" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/rcs_pref_ft_auto_download_roaming" android:key="pref_auto_download_roaming" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/rcs_pref_send_display_report" android:key="pref_send_display_report" android:summary="@string/rcs_pref_send_display_report_detail" android:defaultValue="true" />
+        <ListPreference android:persistent="false" android:entries="@array/rcs_picture_quality_setting" android:title="@string/rcs_pref_picture_message_default_quality" android:key="pref_picture_quality_setting" android:defaultValue="0" android:entryValues="@array/rcs_quality_value" />
+        <ListPreference android:persistent="false" android:entries="@array/rcs_video_quality_setting" android:title="@string/rcs_pref_video_message_default_quality" android:key="pref_video_quality_setting" android:defaultValue="0" android:entryValues="@array/rcs_quality_value" />
+        <CheckBoxPreference android:persistent="true" android:title="Seamless" android:key="pref_seamless" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

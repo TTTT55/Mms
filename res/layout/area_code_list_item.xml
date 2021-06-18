@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaomi.rcs.ui.areacode.AreaCodePickerListItem android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/area_list_item_padding_h" android:paddingEnd="@dimen/area_list_item_padding_h"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/section_header_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/area_code_section_header_height">
+        <TextView android:id="@id/section_header" android:paddingBottom="@dimen/picker_section_header_text_padding_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@miui:style/TextAppearance.List.Secondary.Preference" />
+        <View android:background="@color/area_code_list_divider" android:layout_width="fill_parent" android:layout_height="0.33000004dip" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/area_code_list_height">
+        <TextView android:id="@id/area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentStart="true" style="@miui:style/TextAppearance.Widget.List.Primary" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/area_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginEnd="@dimen/area_code_margin_right" android:layout_alignParentEnd="true" style="@miui:style/TextAppearance.List.Secondary" />
+    </RelativeLayout>
+    <View android:background="@color/area_code_list_divider" android:layout_width="fill_parent" android:layout_height="0.33000004dip" />
+</com.xiaomi.rcs.ui.areacode.AreaCodePickerListItem>

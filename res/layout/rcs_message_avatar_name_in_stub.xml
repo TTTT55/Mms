@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/avatar_container" android:layout="@layout/rcs_message_avatar_stub" android:inflatedId="@id/avatar_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/message_bubble_avatar_margin_horizontal" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <ViewStub android:id="@id/name_container" android:layout="@layout/rcs_message_name_stub" android:inflatedId="@id/name_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bubble_margin" android:layout_toRightOf="@id/avatar_container" />
+</merge>

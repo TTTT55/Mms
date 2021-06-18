@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_phrase_list_item_padding_outer_v">10.0dip</dimen>
+    <dimen name="new_message_contact_panel_home_top_margin">9.0dip</dimen>
+    <dimen name="recent_contact_height_1_rows">36.0dip</dimen>
+    <dimen name="smiley_row_height">46.0dip</dimen>
+    <dimen name="smiley_screen_height">161.5dip</dimen>
+</resources>

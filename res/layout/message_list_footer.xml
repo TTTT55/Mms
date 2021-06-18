@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/security_alert" android:visibility="gone" android:layout_width="@dimen/security_alert_width" android:text="@string/security_alert_desc" style="@style/SecurityAlertTextStyle" />
+    <TextView android:textColor="@color/mms_block_alert_hint_text_color" android:layout_gravity="center_horizontal" android:id="@id/mms_block_alert" android:visibility="gone" android:layout_width="@dimen/security_alert_width" android:text="@string/mms_block_hint" style="@style/SecurityAlertTextStyle" />
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/message_list_footer_height" />
+</LinearLayout>

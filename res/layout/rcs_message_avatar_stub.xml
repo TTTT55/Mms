@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/avatar_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.widget.QuickContactBadge android:id="@id/avatar" android:layout_width="@dimen/message_bubble_avatar_size" android:layout_height="@dimen/message_bubble_avatar_size" android:src="@drawable/rcs_avatar_default" />
+</LinearLayout>

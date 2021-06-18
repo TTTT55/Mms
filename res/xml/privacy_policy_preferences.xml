@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/pref_title_privacy_policy_detail" android:key="pref_key_privacy_policy" />
+    <CheckBoxPreference android:title="@string/pref_title_privacy_authority" android:key="pref_key_privacy_authority" android:summary="@string/pref_summary_privacy_authority" android:defaultValue="true" />
+</PreferenceScreen>

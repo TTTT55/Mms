@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/btn_region" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/extra_vertical_divider" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/btn_left" android:background="@drawable/understand_button_2" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:id="@id/ad_tag1" android:paddingLeft="5.0dip" android:paddingTop="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ADTag" />
+        <TextView android:id="@id/text_left" style="@style/TextAppearance.MessageBody.In.Understand" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/btn_center" android:background="@drawable/understand_button_2" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:id="@id/ad_tag2" android:paddingLeft="5.0dip" android:paddingTop="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ADTag" />
+        <TextView android:id="@id/text_center" style="@style/TextAppearance.MessageBody.In.Understand" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/btn_right" android:background="@drawable/understand_button_2" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:id="@id/ad_tag3" android:paddingLeft="5.0dip" android:paddingTop="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ADTag" />
+        <TextView android:id="@id/text_right" style="@style/TextAppearance.MessageBody.In.Understand" />
+    </FrameLayout>
+</LinearLayout>

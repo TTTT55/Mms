@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:background="@drawable/security_alert_bg" android:layout_width="@dimen/security_alert_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/security_alert_margin" android:layout_marginBottom="@dimen/security_alert_margin" android:minHeight="36.0dip">
+        <TextView android:textColorLink="@color/security_alert_color" android:gravity="start|center" android:layout_gravity="center" android:id="@id/fakecell_notify" android:background="@null" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:text="@string/fake_cell_alert_hint" android:drawablePadding="9.0dip" style="@style/SecurityAlertTextStyle" />
+    </FrameLayout>
+</FrameLayout>

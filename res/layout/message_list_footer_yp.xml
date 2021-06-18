@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_font_size_tiny" android:textStyle="normal" android:textColor="@color/auto_identify_button_title_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_identify_btn_title" android:fontFamily="sans-serif" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sender_id_auto_identify" />
+        <TextView android:textSize="@dimen/text_font_size_small" android:textStyle="bold" android:textColor="@color/auto_identify_button_text_color" android:id="@id/recommendText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:fontFamily="sans-serif" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/message_list_footer_height" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/title_show_sms_template"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/switch_sdk" android:title="@string/pref_switch_sdk_setting" android:key="pref_key_switch_sdk" android:dialogTitle="@string/pref_switch_sdk_setting" android:entryValues="@array/switch_sdk_value" />
+    <CheckBoxPreference android:title="@string/title_show_sms_template" android:key="pref_key_show_template" android:summary="@string/pref_show_sms_template_summary" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/title_allow_network_access" android:key="pref_key_allow_network_access" android:summary="@string/pref_allow_network_access_summary" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/group_verification_codes_title" android:key="pref_key_group_verification_code" android:summary="@string/group_verification_codes_summary" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/title_hide_verification_code" android:key="pref_key_hide_verification_code" android:summary="@string/pref_hide_verification_code_summary" android:defaultValue="true" />
+    <PreferenceScreen android:title="@string/pref_title_smart_msg_privacy_policy" android:key="pref_key_smart_msg_privacy_policy">
+        <intent android:action="android.intent.action.VIEW" android:data="http://www.yulorepages.com/Home/Index/privacy_policy" />
+    </PreferenceScreen>
+</PreferenceScreen>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.MessageListItem android:id="@id/msg_list_item" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/bubble" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bubble_top_margin_minimum" android:layout_toStartOf="@id/checkbox_container">
+        <ViewStub android:layout_gravity="left" android:id="@id/message_item_bubble_in_date_indicator_stub" android:layout="@layout/message_item_bubble_indicator_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bubble_date_indicator_left_margin" android:layout_marginTop="@dimen/bubble_indicator_top_margin" />
+        <ViewStub android:layout_gravity="right" android:id="@id/message_item_bubble_out_date_indicator_stub" android:layout="@layout/message_item_bubble_indicator_out" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bubble_indicator_top_margin" android:layout_marginRight="@dimen/bubble_date_indicator_right_margin" />
+        <ViewStub android:id="@id/message_item_bubble_in_stub" android:layout="@layout/message_item_bubble_in" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/message_item_card_in_stub" android:visibility="gone" android:layout="@layout/message_item_card_in_with_avatar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:layout_gravity="center" android:id="@id/message_item_system_stub" android:layout="@layout/message_item_system_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rcs_system_msg_top_margin" />
+        <ViewStub android:id="@id/message_item_bubble_out_stub" android:layout="@layout/message_item_bubble_out" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/message_item_bubble_out_alert_stub" android:layout="@layout/message_item_bubble_out_alert" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include android:id="@id/checkbox_container" android:layout_width="@dimen/check_box_width" android:layout_height="wrap_content" android:layout_alignTop="@id/bubble" android:layout_alignBottom="@id/bubble" android:layout_marginStart="@dimen/bubble_checkbox_distance" android:layout_alignParentEnd="true" layout="@layout/message_list_item_bubble_checkbox" />
+    <ViewStub android:id="@id/fake_cell_notify_stub" android:layout="@layout/fake_cell_alert" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/bubble" android:layout_centerHorizontal="true" />
+</com.android.mms.ui.MessageListItem>

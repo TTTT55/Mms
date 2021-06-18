@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeightSmall" style="@miui:style/Widget.ListView.Item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/number" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@miui:style/TextAppearance.PreferenceList" />
+    <miui.widget.SlidingButton android:id="@id/switch_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <CheckBox android:id="@android:id/checkbox" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

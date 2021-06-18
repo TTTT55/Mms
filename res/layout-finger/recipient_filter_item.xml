@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/recipient_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/list_item_padding_outer" android:paddingEnd="@dimen/list_item_padding_outer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/contact" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_padding_outer_v" android:layout_marginBottom="@dimen/list_item_padding_outer_v" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:layout_alignParentStart="true">
+        <TextView android:textAppearance="@miui:style/TextAppearance.List.Primary" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true" />
+        <TextView android:textAppearance="@miui:style/TextAppearance.List.Secondary" android:id="@id/number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/name" android:layout_alignStart="@id/name" />
+        <TextView android:textAppearance="@miui:style/TextAppearance.List.Secondary" android:id="@id/type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/name" android:layout_alignBottom="@id/number" android:layout_marginStart="5.0dip" android:layout_toEndOf="@id/number" />
+        <TextView android:textAppearance="@miui:style/TextAppearance.List.Secondary" android:id="@id/location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignBottom="@id/number" android:layout_marginStart="5.0dip" android:layout_toEndOf="@id/type" />
+    </RelativeLayout>
+</RelativeLayout>

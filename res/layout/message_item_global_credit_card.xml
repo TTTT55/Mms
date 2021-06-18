@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/global_credit_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sms_card_margin_left" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/sms_card_margin_right" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/global_train_card_primary_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/card_title" android:layout_width="@dimen/global_train_card_width" android:layout_height="26.669983dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/credit_card_body" android:background="@drawable/ic_card_body" android:layout_width="@dimen/global_train_card_width" android:layout_height="wrap_content">
+        <RelativeLayout android:paddingLeft="13.299988dip" android:paddingTop="13.299988dip" android:paddingRight="13.299988dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <TextView android:textSize="@dimen/global_train_card_secondary_text_size" android:textColor="@color/global_train_card_tertiary_text_color" android:id="@id/card_number_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Account/Card no:" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/global_train_card_secondary_text_size" android:textColor="@color/global_train_card_tertiary_text_color" android:id="@id/credited_amount_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Amount:" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="13.299988dip" android:paddingRight="13.299988dip" android:paddingBottom="13.299988dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/global_train_card_primary_text_size" android:textColor="@color/global_train_card_primary_text_color" android:id="@id/credit_card_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/global_train_card_primary_text_size" android:textColor="@color/global_train_card_primary_text_color" android:id="@id/credited_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="----" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/credit_card_sub_body" android:background="@drawable/ic_card_body_bank_transaction" android:layout_width="@dimen/global_train_card_width" android:layout_height="wrap_content">
+        <RelativeLayout android:paddingLeft="13.299988dip" android:paddingRight="13.299988dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <TextView android:textSize="@dimen/global_train_card_secondary_text_size" android:textColor="@color/global_train_card_tertiary_text_color" android:id="@id/credited_date_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="On Date:" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/global_train_card_secondary_text_size" android:textColor="@color/global_train_card_tertiary_text_color" android:id="@id/credit_avail_bal_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Balance/Limit:" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="13.299988dip" android:paddingRight="13.299988dip" android:paddingBottom="13.299988dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/global_train_card_primary_text_size" android:textColor="@color/global_train_card_primary_text_color" android:id="@id/credited_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="----" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/global_train_card_primary_text_size" android:textColor="@color/global_train_card_primary_text_color" android:id="@id/credit_avail_bal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="----" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/transaction_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/passenger_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TextView android:textSize="@dimen/global_train_card_primary_text_size" android:textColor="@color/global_train_card_primary_text_color" android:gravity="center_horizontal" android:id="@id/transaction_info" android:paddingLeft="13.299988dip" android:paddingTop="13.299988dip" android:paddingRight="13.299988dip" android:paddingBottom="13.299988dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/extra_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/passenger_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TextView android:textSize="@dimen/global_train_card_primary_text_size" android:textColor="@color/global_train_card_primary_text_color" android:gravity="center_horizontal" android:id="@id/extra_info" android:paddingLeft="13.299988dip" android:paddingTop="13.299988dip" android:paddingRight="13.299988dip" android:paddingBottom="13.299988dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/message_item_bubble_in_understand_container" android:layout_width="@dimen/global_train_card_width" android:layout_height="@dimen/sms_card_understand_button_height" />
+</LinearLayout>

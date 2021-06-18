@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="bottom|center" android:id="@id/dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dialog_title_vertical_padding" android:layout_marginBottom="@dimen/dialog_title_vertical_padding" android:layout_marginStart="@dimen/dialog_title_horizontal_padding" android:layout_marginEnd="@dimen/dialog_title_horizontal_padding" style="?android:windowTitleStyle" />
+    <TextView android:textSize="15.0sp" android:id="@id/dialog_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dialog_title_vertical_padding" android:layout_marginStart="25.0dip" android:layout_marginEnd="25.0dip" />
+    <TextView android:textSize="14.0sp" android:id="@id/dialog_content2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rcs_setting_tips" android:layout_marginStart="@dimen/dialog_title_horizontal_padding" android:layout_marginEnd="@dimen/dialog_title_horizontal_padding" />
+    <CheckBox android:textSize="14.0sp" android:id="@id/not_remind_again" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rcs_remember_my_choice" android:layout_marginStart="@dimen/dialog_title_horizontal_padding" />
+    <View android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" style="?android:buttonBarStyle">
+        <Button android:gravity="center" android:id="@id/cancel_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/alert_dlg_cancel_button" android:layout_weight="1.0" style="?android:buttonBarButtonStyle" />
+        <Button android:gravity="center" android:id="@id/resend" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/alert_dlg_ok_button" android:layout_weight="1.0" style="?android:buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

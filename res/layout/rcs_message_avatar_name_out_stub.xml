@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/anchor_view" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ViewStub android:id="@id/avatar_container" android:layout="@layout/rcs_message_avatar_stub" android:inflatedId="@id/avatar_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/message_bubble_avatar_margin_horizontal" android:layout_toLeftOf="@id/anchor_view" android:layout_alignParentBottom="true" />
+    <ViewStub android:id="@id/name_container" android:layout="@layout/rcs_message_name_stub" android:inflatedId="@id/name_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bubble_margin" android:layout_toLeftOf="@id/avatar_container" />
+</merge>

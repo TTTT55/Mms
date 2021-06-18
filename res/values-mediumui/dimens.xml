@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="bubble_body_line_spacing_multiplier">1.1</item>
+    <dimen name="bubble_top_margin_minimum">4.5dip</dimen>
+    <dimen name="datetime_text_size">11.5dip</dimen>
+</resources>

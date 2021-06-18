@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/card_import_bg" android:layout_width="fill_parent" android:layout_height="@dimen/card_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="top" android:id="@id/card_divider" android:background="@drawable/flat_card_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textAppearance="@style/TextAppearance.Card.Primary" android:textSize="@dimen/card_text_font_size_import" android:textColor="@color/normal_card_text_primary" android:ellipsize="end" android:autoLink="none" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_insert_to_contact" android:singleLine="true" />
+    <ImageView android:layout_gravity="end|center" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right_normal" android:contentDescription="@null" android:layout_marginEnd="9.0dip" />
+</FrameLayout>

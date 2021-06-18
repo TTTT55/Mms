@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory>
+        <CheckBoxPreference android:persistent="false" android:title="@string/rcs_auto_resend_sms" android:key="pref_rcs_auto_resend_sms" android:summary="@string/rcs_summary_auto_resend_sms" android:defaultValue="true" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/rcs_auto_resend_mms" android:key="pref_rcs_auto_resend_mms" android:summary="@string/rcs_summary_auto_resend_mms" android:defaultValue="false" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/rcs_auto_resume" android:key="pref_rcs_auto_resume" android:defaultValue="false" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/rcs_auto_resume_only_by_wifi" android:key="pref_rcs_auto_resume_only_by_wifi" android:defaultValue="false" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/rcs_silence_message" android:key="pref_rcs_silence_message" android:summary="@string/rcs_summary_silence_message" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_other_title">
+        <Preference android:persistent="false" android:title="@string/rcs_service_agreement" android:key="pref_rcs_service_agreement" />
+    </PreferenceCategory>
+</PreferenceScreen>

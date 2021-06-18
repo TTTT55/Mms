@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="add_attachment_button_margin">14.0dip</dimen>
+    <dimen name="avatar_size_large">52.669983dip</dimen>
+    <dimen name="bubble_body_view_bottom_padding">10.0dip</dimen>
+    <dimen name="bubble_special_margin">-6.5dip</dimen>
+    <dimen name="bubble_text_top_padding">-8.0dip</dimen>
+    <dimen name="max_bubble_text_width">300.0dip</dimen>
+    <dimen name="max_bubble_text_width_checkbox_diff">50.0dip</dimen>
+    <dimen name="max_scale_font_size">50.0dip</dimen>
+    <dimen name="message_fullscreen_textsize">50.0dip</dimen>
+    <dimen name="message_understand_button_height">70.0dip</dimen>
+    <dimen name="text_font_size_tiny">16.0dip</dimen>
+</resources>

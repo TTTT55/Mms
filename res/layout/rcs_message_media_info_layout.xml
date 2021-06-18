@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rcs_message_media_info_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/play_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/play_icon" />
+    <TextView android:textSize="12.0dip" android:textColor="@android:color/white" android:layout_gravity="bottom|center|left" android:id="@id/rcs_message_size" android:paddingBottom="@dimen/rcs_media_info_padding_bottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:singleLine="true" />
+    <TextView android:textSize="12.0dip" android:textColor="@android:color/white" android:layout_gravity="bottom|center|right" android:id="@id/rcs_message_duration" android:paddingBottom="@dimen/rcs_media_info_padding_bottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:singleLine="true" />
+</FrameLayout>

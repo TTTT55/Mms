@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="attachment_panel_bottom_border_pos">-1.0px</dimen>
+</resources>

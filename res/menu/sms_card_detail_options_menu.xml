@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/action_button_traffic_dest_light" android:id="@id/action_edit_traffic_dest" android:title="@string/menu_traffic_destination" android:showAsAction="always" />
+    <item android:icon="?miui:actionBarFavoriteIcon" android:id="@id/action_lock_message" android:title="@string/menu_lock" android:showAsAction="always" />
+    <item android:icon="?miui:actionBarUnfavoriteIcon" android:id="@id/action_unlock_message" android:title="@string/menu_unlock" android:showAsAction="always" />
+    <item android:icon="?miui:actionBarCopyIcon" android:id="@id/action_copy_message_text" android:title="@string/copy_message_text" android:showAsAction="always" />
+    <item android:icon="@drawable/action_button_forward_light" android:id="@id/action_forward_message" android:title="@string/menu_forward" android:showAsAction="never" />
+    <item android:icon="?miui:actionBarDeleteIcon" android:id="@id/action_delete_message" android:title="@string/delete_message" android:showAsAction="never" />
+    <item android:icon="@drawable/action_button_info_light" android:id="@id/action_view_message_details" android:title="@string/view_message_details" android:showAsAction="never" />
+</menu>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/bottom_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/bottom_editor_panel_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/switch_to_editor" android:background="@drawable/message_edit_bottom_menu_bg" android:layout_width="58.179993dip" android:layout_height="fill_parent" android:src="@drawable/message_edit_bottom_edit_mode" android:contentDescription="@string/switch_to_editor" />
+</LinearLayout>

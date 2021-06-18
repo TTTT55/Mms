@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:variablePadding="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:miui="http://schemas.android.com/apk/res/miui">
+    <item android:state_pressed="true" android:drawable="@drawable/understand_button_2_first_p" miui:state_first_h="true" />
+    <item android:state_pressed="true" android:drawable="@drawable/understand_button_2_middle_p" miui:state_middle_h="true" />
+    <item android:state_pressed="true" android:drawable="@drawable/understand_button_2_last_p" miui:state_last_h="true" />
+    <item android:state_selected="true" android:drawable="@drawable/understand_button_2_first_p" miui:state_first_h="true" />
+    <item android:state_selected="true" android:drawable="@drawable/understand_button_2_middle_p" miui:state_middle_h="true" />
+    <item android:state_selected="true" android:drawable="@drawable/understand_button_2_last_p" miui:state_last_h="true" />
+    <item android:drawable="@drawable/understand_button_2_first_n" miui:state_first_h="true" />
+    <item android:drawable="@drawable/understand_button_2_middle_n" miui:state_middle_h="true" />
+    <item android:drawable="@drawable/understand_button_2_last_n" miui:state_last_h="true" />
+    <item android:state_pressed="true" android:drawable="@drawable/understand_button_2_single_p" miui:state_single_h="true" />
+    <item android:state_selected="true" android:drawable="@drawable/understand_button_2_single_p" miui:state_single_h="true" />
+    <item android:drawable="@drawable/understand_button_2_single_n" miui:state_single_h="true" />
+</selector>

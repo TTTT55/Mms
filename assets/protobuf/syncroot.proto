@@ -1,0 +1,13 @@
+import "sms.proto";
+import "mms.proto";
+
+package syncroot;
+
+option optimize_for = LITE_RUNTIME;
+option java_package = "com.android.mms.backup";
+option java_outer_classname = "SyncRootProtos";
+
+message SyncRoot {
+  optional sms.MmsSms mmsSms = 4;
+  optional mms.MmsCollection mmsCollection = 9;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:orientation="vertical" android:background="@drawable/conversation_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" class="com.android.mms.ui.NewMessagePopupActivity$MessagePopupLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/new_message_popup_title_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/button_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?miui:actionBarDeleteIcon" android:contentDescription="@string/delete_message" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/sender_panel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/TextAppearance.DialogTitle" android:textColor="@color/new_message_popup_sender_color" android:ellipsize="end" android:id="@id/msg_sender" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textAppearance="@style/TextAppearance.DialogTitle.Secondary" android:textColor="@color/new_message_popup_sender_color" android:ellipsize="end" android:id="@id/msg_sender_details" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:id="@id/button_dismiss" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?miui:actionBarDiscardIcon" android:contentDescription="@string/close" />
+    </LinearLayout>
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:transcriptMode="alwaysScroll" android:cacheColorHint="@null" android:layout_weight="1.0" />
+    <ViewStub android:id="@id/new_message_popup_bottom_sim_button_stub" android:layout="@layout/new_message_popup_bottom_sim_button_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="bottom" android:id="@id/bottom_panel" android:background="@drawable/new_message_popup_bottom_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/bottom_editor" android:background="@drawable/new_message_popup_msg_editor_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/bottom_editor_margin" android:divider="@drawable/extra_vertical_divider" android:minHeight="40.0dip" android:layout_weight="1.0" android:showDividers="middle">
+            <EditText android:layout_gravity="center_vertical" android:id="@id/embedded_text_editor" android:background="@null" android:paddingLeft="@dimen/bottom_editor_panel_radius" android:paddingTop="@dimen/mms_editor_top_padding" android:paddingRight="@dimen/bottom_editor_panel_radius" android:paddingBottom="@dimen/mms_editor_top_padding" android:nextFocusRight="@id/send_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="500" android:capitalize="sentences" android:autoText="true" android:layout_weight="1.0" android:inputType="textAutoCorrect|textCapSentences|textMultiLine" android:imeOptions="actionSend|flagNoEnterAction" />
+            <ImageView android:id="@id/send_slot_id" android:paddingLeft="17.089996dip" android:paddingRight="20.72998dip" android:paddingBottom="11.269989dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="fitEnd" android:contentDescription="@null" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.4599915dip" android:layout_marginTop="20.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="18.549988dip">
+            <TextView android:textAppearance="@style/TextAppearance.MessageCounter" android:layout_gravity="center" android:id="@id/text_counter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" />
+            <Button android:id="@id/send_button" android:background="@drawable/send_btn" android:nextFocusLeft="@id/embedded_text_editor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/add_attachment_button_margin" android:contentDescription="@string/send_sms" />
+        </LinearLayout>
+    </LinearLayout>
+</view>

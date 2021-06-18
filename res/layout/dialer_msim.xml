@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="@drawable/dialer_msim_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/select_sim_divider_padding" android:layout_marginBottom="@dimen/select_sim_divider_padding" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/select_sim_divider_padding">
+        <TextView android:textSize="@dimen/select_sim_text_size" android:gravity="center_horizontal" android:id="@id/sim1" android:layout_width="@dimen/select_sim_max_width" android:layout_height="wrap_content" android:drawableTop="@drawable/sim_card_1" android:layout_marginEnd="@dimen/select_sim_vertical_space" />
+        <TextView android:textSize="@dimen/select_sim_text_size" android:gravity="center_horizontal" android:id="@id/sim2" android:layout_width="@dimen/select_sim_max_width" android:layout_height="wrap_content" android:drawableTop="@drawable/sim_card_2" android:layout_toEndOf="@id/sim1" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/card_view_border_width" android:right="@dimen/card_view_border_width" android:bottom="@dimen/card_view_border_width">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <stroke android:width="@dimen/card_view_border_width" android:color="@color/bubble_border_color" />
+            <corners android:topLeftRadius="0.0dip" android:topRightRadius="0.0dip" android:bottomLeftRadius="@dimen/bubble_corner_radius" android:bottomRightRadius="@dimen/bubble_corner_radius" />
+        </shape>
+    </item>
+    <item android:left="@dimen/card_view_border_width" android:top="@dimen/card_view_border_width" android:right="@dimen/card_view_border_width" android:bottom="@dimen/card_view_border_width">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/bubble_understand_bg_color" />
+            <corners android:topLeftRadius="0.0dip" android:topRightRadius="0.0dip" android:bottomLeftRadius="@dimen/bubble_corner_radius" android:bottomRightRadius="@dimen/bubble_corner_radius" />
+        </shape>
+    </item>
+</layer-list>

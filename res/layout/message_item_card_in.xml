@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/message_card" android:background="@drawable/message_card_bg" android:padding="@dimen/card_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_margin_top" android:layout_marginBottom="@dimen/card_margin_bottom" android:layout_marginStart="@dimen/sms_card_margin_left" android:layout_marginEnd="@dimen/sms_card_margin_right">
+        <LinearLayout android:orientation="vertical" android:id="@id/card_body" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/message_item_card_in_body" />
+            <ViewStub android:id="@id/information_title" android:layout="@layout/message_item_card_information_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <include layout="@layout/message_item_card_body_detail" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/message_item_bubble_in_understand_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/sms_card_understand_button_height" android:layout_marginTop="@dimen/card_button_margin_top" />
+    </LinearLayout>
+    <ImageView android:id="@id/favorite_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/favorite_icon_top_margin" android:src="@drawable/favorite_icon" android:baselineAlignBottom="@id/card_body" android:layout_alignTop="@id/message_card" android:layout_centerVertical="true" android:contentDescription="@string/menu_lock" android:paddingStart="@dimen/favorite_icon_padding" android:paddingEnd="@dimen/favorite_icon_padding" android:layout_alignParentEnd="true" />
+</RelativeLayout>

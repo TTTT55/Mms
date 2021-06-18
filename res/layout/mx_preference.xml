@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingTop="@dimen/list_item_padding_outer_v" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/list_item_padding_outer" android:paddingEnd="@dimen/list_item_padding_outer">
+        <TextView android:textAppearance="@style/TextAppearance.List.Primary.Normal" android:ellipsize="end" android:id="@id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mx_dspt" />
+        <TextView android:textAppearance="@style/TextAppearance.List.Secondary.Grey" android:id="@id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="10" android:layout_below="@id/title" android:layout_alignStart="@id/title" />
+    </RelativeLayout>
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

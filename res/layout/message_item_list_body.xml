@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:linksClickable="false" android:id="@id/message_subject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="@dimen/message_body_line_spacing_multiplier" style="@style/TextAppearance.MessageSubject" />
+    <TextView android:ellipsize="end" android:autoLink="email|phone|web" android:linksClickable="false" android:id="@id/message_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="4" android:lineSpacingMultiplier="@dimen/message_body_line_spacing_multiplier" android:textDirection="firstStrongLtr" style="@style/TextAppearance.MessageBody.List" />
+    <LinearLayout android:orientation="vertical" android:id="@id/contact_message_body" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

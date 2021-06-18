@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/sim_button_container" android:background="@drawable/new_message_popup_bottom_bg" android:paddingTop="10.909973dip" android:paddingBottom="11.269989dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/sim_button1" android:background="@drawable/send_slot_btn_bg" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="4.0dip">
+        <TextView android:id="@id/sim_button1_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sim_card1" android:drawableStart="@drawable/sim1" style="@style/SimIndicatorTextStyle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/sim_button2" android:background="@drawable/send_slot_btn_bg" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/sim_button2_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sim_card2" android:drawableStart="@drawable/sim2" style="@style/SimIndicatorTextStyle" />
+    </LinearLayout>
+    <Button android:background="@drawable/send_btn" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="1.0dip" />
+</LinearLayout>

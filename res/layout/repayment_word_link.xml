@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.miui.smsextra.internal.repayment.ui.WordLinkItem android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/word_link_bg" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/word_link_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="#cc000000" android:ellipsize="end" android:id="@id/work_link_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="8.0dip" android:layout_weight="1.0" android:drawableStart="@drawable/ic_word_link" android:layout_marginStart="12.0dip" />
+    <ImageView android:id="@id/tag_hot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tag_hot" android:contentDescription="@null" android:layout_marginStart="3.0dip" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" layout="@layout/layout_ad_tag" />
+    <ImageView android:id="@id/word_link_close" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_small_image_ad_close" android:contentDescription="@string/button_close" />
+</com.miui.smsextra.internal.repayment.ui.WordLinkItem>

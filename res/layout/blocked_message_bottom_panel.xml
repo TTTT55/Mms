@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/blocked_bottom_panel" android:background="@drawable/message_edit_bottom_panel" android:paddingTop="@dimen/button_margin_default" android:paddingBottom="@dimen/button_margin_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:textColor="@color/op_activity_main_textview_support" android:layout_gravity="center_horizontal" android:id="@id/textview_support" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/block_support_text_size" android:text="@string/block_support_text" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/no_block_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/no_block_button_msg" android:layout_weight="1.0" android:layout_marginStart="@dimen/button_margin_default" />
+        <Button android:id="@id/reply_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/reply_button_msg" android:layout_weight="1.0" android:layout_marginEnd="@dimen/button_margin_default" />
+    </LinearLayout>
+</LinearLayout>

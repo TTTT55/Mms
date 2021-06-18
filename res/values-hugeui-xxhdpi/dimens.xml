@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="contact_panel_height_new_message_one_row">71.0dip</dimen>
+    <dimen name="contact_panel_height_new_message_three_row">151.0dip</dimen>
+    <dimen name="contact_panel_height_new_message_two_row">110.19998dip</dimen>
+</resources>

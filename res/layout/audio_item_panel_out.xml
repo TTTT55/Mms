@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/playing_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_icon_voice_out" android:contentDescription="@string/snippet_audio" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="@dimen/audio_item_text_size" android:textColor="@color/audio_item_out_text_color" android:id="@id/audio_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/audio_item_text_margin" android:layout_toStartOf="@id/playing_view" />
+</RelativeLayout>

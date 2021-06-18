@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/SmsCardSecondary" android:id="@id/information_title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentStart="true" />
+    <TextView android:textAppearance="@style/SmsCardPrimary" android:id="@id/sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/information_title2" android:layout_alignBottom="@id/information_title2" android:layout_alignParentStart="true" />
+    <TextView android:textAppearance="@style/SmsCardPrimary" android:id="@id/information_title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.72dip" android:layout_toRightOf="@id/sign" android:layout_below="@id/information_title1" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/card_sms_secondary_size" android:textColor="@color/sms_card_sub_body2" android:id="@id/information_title3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_toRightOf="@id/information_title2" android:layout_alignBaseline="@id/information_title2" />
+    <TextView android:textAppearance="@style/SmsCardSecondary" android:id="@id/information_title_second1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="3.0dip" android:layout_below="@id/information_title2" android:layout_alignLeft="@id/information_title2" />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/information_title_second1">
+        <TextView android:textAppearance="@style/SmsCardPrimary" android:id="@id/information_title_second2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    </LinearLayout>
+</RelativeLayout>

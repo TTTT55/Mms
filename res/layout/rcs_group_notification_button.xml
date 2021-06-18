@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/view_notification" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rcs_group_notification" />
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/rcs_group_notification_unread_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.659973dip" android:layout_marginRight="13.329987dip" android:src="@drawable/unread" />
+</FrameLayout>

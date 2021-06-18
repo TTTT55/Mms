@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/recommend_content" android:background="@drawable/recommend_bar_home_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/recommend_bar_margin_top" android:layout_marginBottom="@dimen/recommend_bar_margin_bottom" android:layout_marginStart="@dimen/recommend_bar_margin_start" android:layout_marginEnd="@dimen/recommend_bar_margin_end">
+        <TextView android:textSize="@dimen/recommend_title_text_size" android:textStyle="bold" android:textColor="@color/recommend_bar_title_color" android:id="@id/recommend_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recommend_bar_title_mx_rcs" />
+        <TextView android:textSize="@dimen/recommend_message_text_size" android:textColor="@color/recommend_bar_message_color" android:id="@id/recommend_message" android:paddingTop="@dimen/recommend_message_padding_top" android:paddingBottom="@dimen/recommend_message_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/recommend_bar_message_mx_rcs" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/recommend_ok_text_size" android:textStyle="bold" android:textColor="@color/recommend_bar_button_ok_text_color" android:id="@id/recommend_ok" android:background="@color/recommend_bar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recommend_bar_ok" android:layout_alignParentRight="true" />
+            <Button android:textSize="@dimen/recommend_close_text_size" android:textColor="@color/recommend_bar_button_close_text_color" android:id="@id/recommend_close" android:background="@color/recommend_bar_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/recommend_close_margin_right" android:text="@string/recommend_bar_cancel" android:layout_toLeftOf="@id/recommend_ok" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
